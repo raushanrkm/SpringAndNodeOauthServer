@@ -1,0 +1,11 @@
+---
+applications: 
+- name: Nodejs-oauth2.0-server
+  memory: 64MB
+  instances: 1
+  path: .
+  domain: cfapps.io
+  command: node ./bin/www
+  services:
+  - UserCredentialDbMongo
+  
